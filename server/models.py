@@ -23,7 +23,7 @@ class User(db.Model):
     username = db.Column(db.String, nullable = False, unique = True)
     email = db.Column(db.String)
     _password_hash = db.Column(db.String, nullable=False)
-    approved_user = db.Column(db.Boolean, default=False, index=True)
+    # approved_user = db.Column(db.Boolean, default=False, index=True)
 
     #role = parent, student, professional and then provided the appropriate site access
     # emotions = db.relationship('Emotion', back_populates='user')
@@ -94,8 +94,8 @@ class Evaluation(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String)
-    question_id = db.Column(db.integer,db.ForeignKey("questions.id"))
-    response_id = db.Column(db.integer,db.ForeignKey("responses.id"))
+    question_id = db.Column(db.Integer,db.ForeignKey('questions.id'))
+    response_id = db.Column(db.Integer,db.ForeignKey('responses.id'))
 
     # questions_relationship = db.relationship('Question', back_populates='responses_relationship', cascade="all,delete")
     # responses_relationship = db.relationship('Response', back_populates='questions_relationship', cascade="all,delete")

@@ -1,4 +1,4 @@
-# Phase 4 Full-Stack Application Project Template
+# WWCode Hackathon 2023 Python Project for Social Good
 
 ## Learning Goals
 

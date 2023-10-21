@@ -13,6 +13,12 @@ sqlalchemy-serializer = "*"
 flask-restful = "*"
 flask-cors = "*"
 faker = "*"
+flask-bcrypt = "*"
+gunicorn = "*"
+honcho = "*"
+importlib-metadata = "*"
+python-dotenv = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_full_version = "3.8.13"
